@@ -1,0 +1,92 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* prixz_developer_testing
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-22 19:14+0000\n"
+"PO-Revision-Date: 2023-03-22 12:18-0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.2.2\n"
+
+#. module: prixz_developer_testing
+#: model:mail.template,body_html:prixz_developer_testing.quotes_notification_salesperson_email_template
+msgid ""
+"<div>\n"
+"                    % set salesperson = ctx['salesperson']\n"
+"                    % set pending_quotes_count = "
+"ctx['pending_quotes_count']\n"
+"                    <p>Hello ${salesperson.name},</p>\n"
+"                    <p>You have ${pending_quotes_count} pending quotes.</"
+"p>\n"
+"                    <p>Atte: Sales Team </p>\n"
+"                </div>\n"
+"            "
+msgstr ""
+"<div>\n"
+"                    % set salesperson = ctx['salesperson']\n"
+"                    % set pending_quotes_count = "
+"ctx['pending_quotes_count']\n"
+"                    <p>Hola ${salesperson.name},</p>\n"
+"                    <p>Tienes ${pending_quotes_count} cotizaciones "
+"pendientes.</p>\n"
+"                    <p>Atte: Equipo de ventas </p>\n"
+"                </div>\n"
+"            "
+
+#. module: prixz_developer_testing
+#: model:ir.model.fields,field_description:prixz_developer_testing.field_sale_order__display_name
+msgid "Display Name"
+msgstr "Nombre en pantalla"
+
+#. module: prixz_developer_testing
+#: model:ir.model.fields,field_description:prixz_developer_testing.field_sale_order__id
+msgid "ID"
+msgstr ""
+
+#. module: prixz_developer_testing
+#: model:ir.model.fields,field_description:prixz_developer_testing.field_sale_order____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: prixz_developer_testing
+#: model:ir.model.fields,field_description:prixz_developer_testing.field_sale_order__partner_vat
+msgid "Partner VAT"
+msgstr "RFC Cliente"
+
+#. module: prixz_developer_testing
+#: model:ir.model.fields,field_description:prixz_developer_testing.field_sale_order__product_ids
+msgid "Products"
+msgstr "Productos"
+
+#. module: prixz_developer_testing
+#: model:ir.model,name:prixz_developer_testing.model_sale_order
+msgid "Sales Order"
+msgstr "Orden de venta"
+
+#. module: prixz_developer_testing
+#: model:ir.actions.server,name:prixz_developer_testing.ir_cron_send_quotes_notification_email_ir_actions_server
+#: model:ir.cron,cron_name:prixz_developer_testing.ir_cron_send_quotes_notification_email
+#: model:ir.cron,name:prixz_developer_testing.ir_cron_send_quotes_notification_email
+msgid "Send Quotes Notification Email"
+msgstr "Enviar correo electrónico de aviso de presupuestos"
+
+#. module: prixz_developer_testing
+#: model:ir.model.fields,help:prixz_developer_testing.field_sale_order__partner_vat
+msgid ""
+"The Tax Identification Number. Complete it if the contact is subjected to "
+"government taxes. Used in some legal statements."
+msgstr ""
+
+#. module: prixz_developer_testing
+#: model:mail.template,subject:prixz_developer_testing.quotes_notification_salesperson_email_template
+msgid "You have ${ctx['pending_quotes_count']} pending quotes"
+msgstr "Tienes ${ctx['pending_quotes_count']} cotizaciones pendientes"
